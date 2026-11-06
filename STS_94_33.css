@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FED41D; 
+  font-family: 'Quicksand', sans-serif;
+  color: #222;
+  line-height: 1.7;
+  padding: 30px 15px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.character {
+  position: fixed;
+  bottom: 10px;
+  height: 260px;
+  z-index: 150;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.3));
+}
+.character {
+  position: fixed;
+  bottom: 10px;
+  height: 260px;
+  z-index: 999; /* Pastikan z-index tinggi agar berada di paling depan */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.container {
+ max-width: 900px;
+ margin: 0 auto;
+ background-color: #ffffff;
+ border: 5px solid #000000;
+ border-radius: 20px;
+ padding: 35px;
+ box-shadow: 10px 10px 0px #000000;
+}
+
+header {
+  text-align: center;
+  background-color: #70D1FE;
+  border: 4px solid #000;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.glow-title {
+  font-family: 'Fredoka', cursive;
+  font-size: 2.8rem;
+  color: #FED41D;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 2px #000;
+  text-shadow: 3px 3px 0 #000;
+  transition: text-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.glow-title:hover {
+  transform: scale(1.03);
+  text-shadow: 0 0 10px #ffffff, 
+               0 0 20px #FED41D, 
+               0 0 30px #FF8200, 
+               4px 4px 0px #000;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  color: #000;
+}
+
+.imgcontainer {
+  display: flex;
+  flex-direction:row;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.img-box {
+  flex: 1;
+}
+
+.glow-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid #000;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.glow-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #FED41D, 0 0 25px #FF8200;
+  border-color: #FF8200;
+}
+
+.content p {
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.tips-section {
+  margin-top: 40px;
+  background-color: #FF8200;
+  border: 4px solid #000;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.tips-section h2 {
+  font-family: 'Fredoka', cursive;
+  font-size: 2rem;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 20px;
+  -webkit-text-stroke: 1.5px #000;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.tips-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.tips-grid {
+  flex: 1.2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.tip-card {
+  background-color: #FFF;
+  border: 3px solid #000;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 4px 4px 0 #000;
+  transition: transform 0.2s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-3px);
+}
+
+.tip-card h3 {
+  font-family: 'Fredoka', cursive;
+  font-size: 1.05rem;
+  color: #D32F2F;
+  margin-bottom: 6px;
+}
+
+.tip-card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.sofa-container {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sofa-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.4));
+  cursor: pointer;
+}
+
+.sofa-img:hover {
+  transform: scale(1.08) rotate(-2deg);
+  filter: drop-shadow(0 12px 12px rgba(0, 0, 0, 0.5)) 
+          drop-shadow(0 0 15px #FED41D);
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+
+  .character {
+    display:contents;
+  }
+  
+  .tips-wrapper {
+    flex-direction: column;
+  }
+  
+  .sofa-container {
+    margin-top: 15px;
+  }
+
+
+  .image-gallery {
+    flex-direction: column;
+  }
+  
+  .glow-title {
+    font-size: 2rem;
+    font-family: "mafont";
+  }
+@font-face {
+    font-family: "mafont";
+    src: url("zactoon/Zactoon.ttf");
+}
+
+.footer{
+  width: 100%;
+  max-width: 280px;
+}
